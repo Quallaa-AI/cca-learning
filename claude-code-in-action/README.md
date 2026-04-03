@@ -1,0 +1,25 @@
+# claude-code-in-action
+
+## Curriculum
+
+1. [Introduction](./01-introduction.md)
+2. [What is a coding assistant?](./02-what-is-a-coding-assistant.md)
+3. [Claude Code in action](./03-claude-code-in-action.md)
+4. [Claude Code setup](./04-claude-code-setup.md)
+5. [Project setup](./05-project-setup.md)
+6. [Adding context](./06-adding-context.md)
+7. [Making changes](./07-making-changes.md)
+8. [Course satisfaction survey](./08-course-satisfaction-survey.md)
+9. [Controlling context](./09-controlling-context.md)
+10. [Custom commands](./10-custom-commands.md)
+11. [MCP servers with Claude Code](./11-mcp-servers-with-claude-code.md)
+12. [Github integration](./12-github-integration.md)
+13. [Introducing hooks](./13-introducing-hooks.md)
+14. [Defining hooks](./14-defining-hooks.md)
+15. [Implementing a hook](./15-implementing-a-hook.md)
+16. [Gotchas around hooks](./16-gotchas-around-hooks.md)
+17. [Useful hooks!](./17-useful-hooks.md)
+18. [Another useful hook](./18-another-useful-hook.md)
+19. [The Claude Code SDK](./19-the-claude-code-sdk.md)
+20. [Quiz on Claude Code](./20-quiz-on-claude-code.md)
+21. [Summary and next steps](./21-summary-and-next-steps.md)

@@ -1,0 +1,652 @@
+# CCA Evaluation Rubric
+# Extracted from Anthropic Academy course material for use in the 4D Loop diligence system.
+# Each criterion is something the overnight agents can evaluate the Quallaa codebase against.
+# Associates label findings in the portal using these criteria as the standard.
+
+courses:
+
+  # ============================================================================
+  # COURSE 1: AI Fluency Framework Foundations
+  # The philosophical backbone — defines the 4D competencies that structure everything
+  # ============================================================================
+  - id: ai-fluency
+    name: "AI Fluency Framework Foundations"
+    path: ai-fluency-framework-foundations
+    modules:
+
+      - id: ai-fluency-intro
+        number: 1
+        title: "Introduction to AI Fluency"
+        criteria:
+          - id: fluency-definition
+            name: "AI Fluency Definition"
+            statement: "AI Fluency means engaging with AI in ways that are effective, efficient, ethical, and safe"
+            evaluates: "Does the system's design reflect all four qualities — not just effectiveness?"
+
+      - id: why-ai-fluency
+        number: 2
+        title: "Why Do We Need AI Fluency?"
+        criteria:
+          - id: engagement-modes
+            name: "Three Engagement Modes"
+            statement: "Three ways to engage with AI: Automation (AI executes tasks), Augmentation (human-AI collaboration), Agency (AI works independently with shaped behavior)"
+            evaluates: "Are the system's AI interactions correctly categorized by engagement mode? Is each mode used appropriately?"
+
+      - id: 4d-framework
+        number: 3
+        title: "The 4D Framework"
+        criteria:
+          - id: delegation-competency
+            name: "Delegation Competency"
+            statement: "Deciding what work to do with AI vs. yourself"
+            evaluates: "Are human-AI task boundaries intentional and well-reasoned?"
+          - id: description-competency
+            name: "Description Competency"
+            statement: "Communicating effectively with AI systems"
+            evaluates: "Are prompts and instructions clear and purposeful?"
+          - id: discernment-competency
+            name: "Discernment Competency"
+            statement: "Evaluating AI outputs critically"
+            evaluates: "Are there mechanisms to evaluate what the AI produces?"
+          - id: diligence-competency
+            name: "Diligence Competency"
+            statement: "Ensuring responsible AI collaboration"
+            evaluates: "Is AI use transparent, accountable, and responsible?"
+
+      - id: gen-ai-fundamentals
+        number: 4
+        title: "Generative AI Fundamentals"
+        criteria:
+          - id: model-understanding
+            name: "Model Understanding"
+            statement: "Generative AI creates new content via pre-training and fine-tuning; constrained by context windows and training data"
+            evaluates: "Do system designs account for model limitations (context windows, knowledge cutoffs, hallucination risk)?"
+
+      - id: capabilities-limitations
+        number: 5
+        title: "Capabilities & Limitations"
+        criteria:
+          - id: human-ai-complementarity
+            name: "Human-AI Complementarity"
+            statement: "Most effective applications combine human and AI strengths — humans provide critical thinking, judgment, creativity, and ethical oversight"
+            evaluates: "Does the system leverage complementary strengths rather than trying to automate everything?"
+          - id: limitation-awareness
+            name: "Limitation Awareness"
+            statement: "Current limitations include knowledge cutoffs, hallucinations, context window constraints, and reasoning challenges"
+            evaluates: "Are known AI limitations explicitly handled in the system design?"
+
+      - id: delegation-deep-dive
+        number: 6
+        title: "A Closer Look at Delegation"
+        criteria:
+          - id: problem-awareness
+            name: "Problem Awareness"
+            statement: "Clearly understanding your goals and the nature of the work before involving AI"
+            evaluates: "Is the problem clearly defined before AI is applied? Or is AI solving an unclear problem?"
+          - id: platform-awareness
+            name: "Platform Awareness"
+            statement: "Understanding the capabilities and limitations of different AI systems"
+            evaluates: "Is the right AI system/model chosen for each task based on its actual capabilities?"
+          - id: task-delegation
+            name: "Task Delegation"
+            statement: "Thoughtfully distributing work between humans and AI to leverage the strengths of each"
+            evaluates: "Is each task assigned to human or AI based on who does it better, not just who does it faster?"
+
+      - id: project-planning
+        number: 7
+        title: "Project Planning and Delegation"
+        criteria:
+          - id: delegation-planning
+            name: "Delegation Planning"
+            statement: "Multi-step projects require explicit delegation plans that identify which tasks benefit from human expertise, AI capabilities, or collaboration"
+            evaluates: "Do complex features have explicit human-AI task breakdowns?"
+
+      - id: description-deep-dive
+        number: 8
+        title: "A Closer Look at Description"
+        criteria:
+          - id: product-description
+            name: "Product Description"
+            statement: "Clearly defining what you want the AI to create — outputs, format, audience, style"
+            evaluates: "Do prompts specify what the AI should produce, in what format, for what audience?"
+          - id: process-description
+            name: "Process Description"
+            statement: "Guiding how the AI approaches your request — can be as important as specifying the end goal"
+            evaluates: "Do prompts guide the AI's reasoning approach, not just the desired output?"
+          - id: performance-description
+            name: "Performance Description"
+            statement: "Defining how you want the AI to behave during collaboration — concise or detailed, challenging or supportive"
+            evaluates: "Do prompts specify interaction style and behavioral expectations?"
+
+      - id: prompting-techniques
+        number: 9
+        title: "Effective Prompting Techniques"
+        criteria:
+          - id: six-techniques
+            name: "Six Prompting Techniques"
+            statement: "Give context, show examples, specify constraints, break into steps, ask AI to think first, define role/tone"
+            evaluates: "Do system prompts employ these techniques appropriately?"
+          - id: iterative-prompting
+            name: "Iterative Prompting"
+            statement: "Successful prompting is iterative — expect to refine based on results"
+            evaluates: "Is there a process for refining prompts based on observed performance?"
+
+      - id: discernment-deep-dive
+        number: 10
+        title: "A Closer Look at Discernment"
+        criteria:
+          - id: product-discernment
+            name: "Product Discernment"
+            statement: "Evaluating the quality of AI outputs — accuracy, appropriateness, coherence, relevance"
+            evaluates: "Are AI outputs evaluated for accuracy and quality before being used?"
+          - id: process-discernment
+            name: "Process Discernment"
+            statement: "Assessing how the AI arrived at its output — looking for logical errors, attention gaps, inappropriate reasoning"
+            evaluates: "Is there visibility into how the AI reasoned, not just what it produced?"
+          - id: performance-discernment
+            name: "Performance Discernment"
+            statement: "Evaluating how the AI behaves within the collaboration — communication style, responsiveness, attentiveness"
+            evaluates: "Is the AI's interaction behavior monitored and evaluated?"
+
+      - id: description-discernment-loop
+        number: 11
+        title: "The Description-Discernment Loop"
+        criteria:
+          - id: feedback-loop
+            name: "Description-Discernment Feedback Loop"
+            statement: "Effective AI collaboration requires continuous loops: describe what you want, discern what you got, refine the description"
+            evaluates: "Is there a feedback loop between prompt design and output evaluation?"
+
+      - id: diligence-deep-dive
+        number: 12
+        title: "A Closer Look at Diligence"
+        criteria:
+          - id: creation-diligence
+            name: "Creation Diligence"
+            statement: "Being thoughtful about which AI systems you choose and how you work with them"
+            evaluates: "Are AI system choices deliberate and documented? Are there privacy/security considerations?"
+          - id: transparency-diligence
+            name: "Transparency Diligence"
+            statement: "Being open and honest about AI's role in your work with those who need to know"
+            evaluates: "Is AI involvement disclosed to customers, partners, and stakeholders appropriately?"
+          - id: deployment-diligence
+            name: "Deployment Diligence"
+            statement: "Taking ownership for AI-assisted outputs you share with others — verifying and vouching for them"
+            evaluates: "Does someone take responsibility for verifying AI outputs before they reach customers?"
+
+      - id: conclusion
+        number: 13
+        title: "Conclusion"
+        criteria:
+          - id: ongoing-practice
+            name: "Ongoing Practice"
+            statement: "AI Fluency develops through intentional practice — each interaction is an opportunity to refine skills"
+            evaluates: "Is there a culture of continuous improvement in how the team works with AI?"
+
+  # ============================================================================
+  # COURSE 2: Introduction to Agent Skills
+  # Practical — how to encode reusable AI behavior
+  # ============================================================================
+  - id: agent-skills
+    name: "Introduction to Agent Skills"
+    path: introduction-to-agent-skills
+    modules:
+
+      - id: what-are-skills
+        number: 1
+        title: "What Are Skills?"
+        criteria:
+          - id: skill-definition
+            name: "Skill Definition"
+            statement: "Skills are reusable markdown files that teach Claude Code how to handle specific tasks automatically, loaded on demand via semantic matching"
+            evaluates: "Are repeated instructions encoded as skills rather than re-explained each time?"
+          - id: skill-vs-claude-md
+            name: "Skills vs CLAUDE.md"
+            statement: "CLAUDE.md loads every conversation (always-on standards). Skills load on demand (task-specific expertise)"
+            evaluates: "Is the right information in the right place — always-on vs on-demand?"
+
+      - id: creating-skills
+        number: 2
+        title: "Creating Your First Skill"
+        criteria:
+          - id: skill-structure
+            name: "Skill Structure"
+            statement: "A skill is a directory containing SKILL.md with frontmatter (name, description) and instructions below"
+            evaluates: "Are skills properly structured with clear metadata and instructions?"
+          - id: skill-matching
+            name: "Skill Matching"
+            statement: "Claude matches requests to skills via semantic matching on descriptions — descriptions must overlap with how users phrase requests"
+            evaluates: "Are skill descriptions written to match actual user language?"
+
+      - id: configuration-multi-file
+        number: 3
+        title: "Configuration and Multi-File Skills"
+        criteria:
+          - id: allowed-tools
+            name: "Tool Restrictions"
+            statement: "allowed-tools restricts which tools Claude can use when a skill is active — useful for read-only or security-sensitive workflows"
+            evaluates: "Do security-sensitive skills restrict tool access appropriately?"
+          - id: progressive-disclosure
+            name: "Progressive Disclosure"
+            statement: "Keep SKILL.md under 500 lines; link to supporting files that Claude reads only when needed"
+            evaluates: "Are large skills organized with progressive disclosure to manage context efficiently?"
+
+      - id: skills-vs-features
+        number: 4
+        title: "Skills vs Other Claude Code Features"
+        criteria:
+          - id: right-tool-for-job
+            name: "Right Customization Tool"
+            statement: "Skills (on-demand knowledge), CLAUDE.md (always-on standards), Hooks (event-driven automation), Subagents (isolated execution), MCP (external tools)"
+            evaluates: "Is each customization mechanism used for its intended purpose?"
+
+      - id: sharing-skills
+        number: 5
+        title: "Sharing Skills"
+        criteria:
+          - id: skill-distribution
+            name: "Skill Distribution"
+            statement: "Project skills in .claude/skills are shared via Git. Enterprise skills override all others. Subagents must explicitly list skills in frontmatter"
+            evaluates: "Are team-shared skills committed to the repo? Are subagent skill dependencies explicit?"
+
+      - id: troubleshooting
+        number: 6
+        title: "Troubleshooting Skills"
+        criteria:
+          - id: skill-debugging
+            name: "Skill Debugging"
+            statement: "Common issues: description doesn't match user language (not triggering), wrong file structure (not loading), similar descriptions (wrong skill used)"
+            evaluates: "When skills fail, is the root cause systematically diagnosed?"
+
+  # ============================================================================
+  # COURSE 3: Building with the Claude API
+  # Technical foundation — API, tools, RAG, evals, prompting, MCP, agents
+  # ============================================================================
+  - id: claude-api
+    name: "Building with the Claude API"
+    path: building-with-the-claude-api
+    modules:
+
+      - id: api-access
+        number: 3
+        title: "Accessing the API"
+        criteria:
+          - id: sdk-usage
+            name: "SDK Usage"
+            statement: "Use the official Anthropic SDK for API access; handle API keys securely"
+            evaluates: "Is the Anthropic SDK used correctly? Are API keys stored securely (env vars, not code)?"
+
+      - id: multi-turn
+        number: 6
+        title: "Multi-Turn Conversations"
+        criteria:
+          - id: conversation-management
+            name: "Conversation Management"
+            statement: "Multi-turn conversations require maintaining message history with proper role alternation"
+            evaluates: "Is conversation history managed correctly with proper message structure?"
+
+      - id: system-prompts
+        number: 8
+        title: "System Prompts"
+        criteria:
+          - id: system-prompt-design
+            name: "System Prompt Design"
+            statement: "System prompts set behavior, personality, and constraints for the entire conversation"
+            evaluates: "Are system prompts well-designed with clear behavioral boundaries?"
+
+      - id: temperature
+        number: 10
+        title: "Temperature"
+        criteria:
+          - id: temperature-setting
+            name: "Temperature Configuration"
+            statement: "Temperature controls randomness — lower for consistent/factual tasks, higher for creative tasks"
+            evaluates: "Is temperature set appropriately for each use case?"
+
+      - id: prompt-evaluation
+        number: 16
+        title: "Prompt Evaluation"
+        criteria:
+          - id: eval-workflow
+            name: "Evaluation Workflow"
+            statement: "Systematic prompt evaluation: generate test datasets, run prompts, grade outputs (model-based or code-based), iterate"
+            evaluates: "Is there a systematic evaluation process for prompts, not just ad hoc testing?"
+          - id: model-grading
+            name: "Model-Based Grading"
+            statement: "Use a separate model call to grade outputs against defined criteria"
+            evaluates: "Are AI outputs evaluated programmatically, not just by human spot-checking?"
+
+      - id: prompt-engineering
+        number: 24
+        title: "Prompt Engineering"
+        criteria:
+          - id: iterative-improvement
+            name: "Iterative Prompt Improvement"
+            statement: "Set a goal, write initial prompt, evaluate, apply techniques, re-evaluate — repeat until satisfied"
+            evaluates: "Are prompts improved through measured iteration, not guesswork?"
+
+      - id: clear-and-direct
+        number: 25
+        title: "Being Clear and Direct"
+        criteria:
+          - id: clarity
+            name: "Prompt Clarity"
+            statement: "Lead with direct action verbs; state exactly what you want without ambiguity"
+            evaluates: "Do prompts start with clear, direct instructions?"
+
+      - id: being-specific
+        number: 26
+        title: "Being Specific"
+        criteria:
+          - id: specificity
+            name: "Prompt Specificity"
+            statement: "Provide output quality guidelines and process steps — don't leave everything to interpretation"
+            evaluates: "Do prompts specify quality criteria and step-by-step approaches where needed?"
+
+      - id: xml-structure
+        number: 27
+        title: "Structure with XML Tags"
+        criteria:
+          - id: xml-tags
+            name: "XML Tag Structure"
+            statement: "Use XML tags to create clear boundaries between instructions, data, and context in complex prompts"
+            evaluates: "Are complex prompts structured with clear section boundaries?"
+
+      - id: examples
+        number: 28
+        title: "Providing Examples"
+        criteria:
+          - id: few-shot
+            name: "Few-Shot Prompting"
+            statement: "Provide input/output examples to handle edge cases, define formats, and set quality expectations"
+            evaluates: "Do prompts include examples where format or edge-case handling matters?"
+
+      - id: tool-use
+        number: 31
+        title: "Introducing Tool Use"
+        criteria:
+          - id: tool-design
+            name: "Tool Design"
+            statement: "Tools extend AI capabilities beyond training data; design with clear names, descriptions, and input schemas"
+            evaluates: "Are tools well-named with descriptive schemas that help the model use them correctly?"
+
+      - id: tool-schemas
+        number: 34
+        title: "Tool Schemas"
+        criteria:
+          - id: schema-quality
+            name: "Schema Quality"
+            statement: "Tool descriptions should be 3-4 sentences explaining what, when to use, and what it returns; parameter descriptions must be detailed"
+            evaluates: "Are tool schemas descriptive enough for the model to use them without guessing?"
+
+      - id: multi-turn-tools
+        number: 37
+        title: "Multi-Turn Conversations with Tools"
+        criteria:
+          - id: tool-orchestration
+            name: "Tool Orchestration"
+            statement: "Handle multi-step tool chains where the model needs to call several tools in sequence to answer one question"
+            evaluates: "Can the system handle multi-step tool chains gracefully?"
+
+      - id: rag-intro
+        number: 44
+        title: "Introducing RAG"
+        criteria:
+          - id: rag-design
+            name: "RAG Design"
+            statement: "Retrieval-Augmented Generation: retrieve relevant documents, inject as context, let the model reason over them"
+            evaluates: "Is relevant context retrieved and injected rather than hardcoded or omitted?"
+
+      - id: extended-thinking
+        number: 51
+        title: "Extended Thinking"
+        criteria:
+          - id: thinking-modes
+            name: "Extended Thinking"
+            statement: "Extended thinking gives the model more reasoning tokens for complex problems"
+            evaluates: "Is extended thinking used for tasks that benefit from deeper reasoning?"
+
+      - id: prompt-caching
+        number: 55
+        title: "Prompt Caching"
+        criteria:
+          - id: caching-strategy
+            name: "Prompt Caching Strategy"
+            statement: "Cache static prompt content to reduce cost and latency on repeated calls"
+            evaluates: "Is prompt caching used where the same context is sent repeatedly?"
+
+      - id: mcp-in-api
+        number: 60
+        title: "Introducing MCP (in API context)"
+        criteria:
+          - id: mcp-architecture
+            name: "MCP Architecture"
+            statement: "MCP shifts tool definitions from your server to dedicated MCP servers — standardized interface to external services"
+            evaluates: "Are external integrations built as MCP servers where appropriate?"
+
+      - id: agents-workflows
+        number: 76
+        title: "Agents and Workflows"
+        criteria:
+          - id: agent-patterns
+            name: "Agent vs Workflow Patterns"
+            statement: "Workflows are predetermined sequences; agents make dynamic decisions. Use workflows when steps are known, agents when they're not"
+            evaluates: "Is the right pattern (workflow vs agent) chosen for each automation?"
+
+      - id: parallelization
+        number: 77
+        title: "Parallelization Workflows"
+        criteria:
+          - id: parallel-execution
+            name: "Parallelization"
+            statement: "Run independent subtasks in parallel to reduce latency; combine results at the end"
+            evaluates: "Are independent operations parallelized rather than run sequentially?"
+
+      - id: chaining
+        number: 78
+        title: "Chaining Workflows"
+        criteria:
+          - id: chain-design
+            name: "Chaining"
+            statement: "Chain sequential operations where each step's output feeds the next; add validation gates between steps"
+            evaluates: "Are multi-step operations chained with clear handoffs and validation?"
+
+      - id: routing
+        number: 79
+        title: "Routing Workflows"
+        criteria:
+          - id: routing-design
+            name: "Routing"
+            statement: "Route inputs to specialized handlers based on classification; each handler is optimized for its task"
+            evaluates: "Are inputs routed to specialized handlers rather than handled by one generic agent?"
+
+  # ============================================================================
+  # COURSE 4: Introduction to MCP
+  # Protocol-level understanding — servers, clients, tools, resources, prompts
+  # ============================================================================
+  - id: mcp
+    name: "Introduction to MCP"
+    path: introduction-to-mcp
+    modules:
+
+      - id: mcp-intro
+        number: 2
+        title: "Introducing MCP"
+        criteria:
+          - id: mcp-purpose
+            name: "MCP Purpose"
+            statement: "MCP shifts tool definitions and execution from your server to dedicated MCP servers — standardized access to external services"
+            evaluates: "Are integrations implemented as MCP servers rather than custom code where the standard applies?"
+          - id: mcp-vs-tool-use
+            name: "MCP vs Tool Use"
+            statement: "MCP servers provide pre-built tool schemas and functions; tool use is how Claude calls them. Complementary, not the same"
+            evaluates: "Is the distinction between MCP (tool provider) and tool use (tool calling) understood in the architecture?"
+
+      - id: mcp-clients
+        number: 3
+        title: "MCP Clients"
+        criteria:
+          - id: client-architecture
+            name: "Client Architecture"
+            statement: "The MCP client bridges your application and MCP servers, handling ListTools and CallTool message exchange"
+            evaluates: "Is the MCP client properly managing server connections and message exchange?"
+
+      - id: mcp-tools
+        number: 5
+        title: "Defining Tools with MCP"
+        criteria:
+          - id: mcp-tool-definition
+            name: "MCP Tool Definition"
+            statement: "Define tools with decorators and type hints; SDK auto-generates proper schemas"
+            evaluates: "Are MCP tools defined with proper type hints and descriptive names?"
+
+      - id: server-inspector
+        number: 6
+        title: "The Server Inspector"
+        criteria:
+          - id: testing-tools
+            name: "MCP Testing"
+            statement: "Use the built-in MCP Inspector for real-time testing and debugging of servers"
+            evaluates: "Are MCP servers tested with the inspector before deployment?"
+
+      - id: mcp-resources
+        number: 9
+        title: "Defining Resources"
+        criteria:
+          - id: resource-design
+            name: "Resource Design"
+            statement: "Resources expose read-only data to clients — use for context injection rather than tool calls"
+            evaluates: "Is static/reference data exposed as resources rather than requiring tool calls?"
+
+      - id: mcp-prompts
+        number: 11
+        title: "Defining Prompts"
+        criteria:
+          - id: prompt-templates
+            name: "MCP Prompt Templates"
+            statement: "Prompts are pre-built, tested instructions that users trigger on demand — higher quality than ad hoc prompting"
+            evaluates: "Are high-value prompts packaged as MCP prompt templates for reuse?"
+
+      - id: mcp-primitives
+        number: 14
+        title: "MCP Review"
+        criteria:
+          - id: primitive-selection
+            name: "Right Primitive Selection"
+            statement: "Tools are model-controlled (Claude decides). Resources are app-controlled (your code decides). Prompts are user-controlled (user triggers)"
+            evaluates: "Is each MCP primitive used for its intended control layer?"
+
+  # ============================================================================
+  # COURSE 5: Claude Code in Action
+  # Applied — using Claude Code effectively in development workflows
+  # ============================================================================
+  - id: claude-code
+    name: "Claude Code in Action"
+    path: claude-code-in-action
+    modules:
+
+      - id: coding-assistant
+        number: 2
+        title: "What Is a Coding Assistant?"
+        criteria:
+          - id: tool-use-understanding
+            name: "Tool Use Understanding"
+            statement: "Coding assistants use tool use to interact with the outside world — reading files, running commands, editing code"
+            evaluates: "Does the team understand how Claude Code actually works (tool use, not magic)?"
+
+      - id: adding-context
+        number: 6
+        title: "Adding Context"
+        criteria:
+          - id: context-management
+            name: "Context Management"
+            statement: "Use /init for CLAUDE.md, @ mentions for specific files, CLAUDE.md for persistent instructions. Too much irrelevant context decreases performance"
+            evaluates: "Is context managed intentionally — right information, right time, not everything always?"
+          - id: claude-md-design
+            name: "CLAUDE.md Design"
+            statement: "CLAUDE.md serves as persistent project instructions shared via source control; CLAUDE.local.md for personal customization"
+            evaluates: "Is CLAUDE.md maintained as an accurate project guide? Is it shared with the team?"
+
+      - id: making-changes
+        number: 7
+        title: "Making Changes"
+        criteria:
+          - id: planning-mode
+            name: "Planning Mode Usage"
+            statement: "Use Planning Mode for complex multi-file tasks that require broad codebase understanding before implementation"
+            evaluates: "Is planning mode used for complex changes rather than jumping straight to implementation?"
+          - id: thinking-modes
+            name: "Thinking Mode Usage"
+            statement: "Extended thinking modes give Claude more reasoning tokens — use for complex logic, debugging, algorithmic challenges"
+            evaluates: "Are thinking modes used appropriately for problem complexity?"
+
+      - id: controlling-context
+        number: 9
+        title: "Controlling Context"
+        criteria:
+          - id: conversation-control
+            name: "Conversation Control"
+            statement: "Use Escape to interrupt, double-Escape to rewind, /compact to summarize, /clear to reset. Manage context actively"
+            evaluates: "Is conversation context managed actively during long sessions?"
+
+      - id: custom-commands
+        number: 10
+        title: "Custom Commands"
+        criteria:
+          - id: command-design
+            name: "Custom Command Design"
+            statement: "Custom commands automate repetitive workflows — create in .claude/commands/ as markdown files with $ARGUMENTS support"
+            evaluates: "Are repetitive workflows encoded as custom commands?"
+
+      - id: mcp-with-claude-code
+        number: 11
+        title: "MCP Servers with Claude Code"
+        criteria:
+          - id: mcp-extension
+            name: "MCP Extension"
+            statement: "Extend Claude Code with MCP servers for external capabilities (browser control, database access, API testing)"
+            evaluates: "Are MCP servers used to extend Claude Code's capabilities where needed?"
+
+      - id: github-integration
+        number: 12
+        title: "GitHub Integration"
+        criteria:
+          - id: ci-integration
+            name: "GitHub CI Integration"
+            statement: "Claude Code integrates with GitHub Actions for automated PR reviews and issue response via @claude mentions"
+            evaluates: "Is CI/CD integration with Claude Code set up for automated code review?"
+
+      - id: hooks
+        number: 13-15
+        title: "Hooks (Intro, Definition, Implementation)"
+        criteria:
+          - id: hook-design
+            name: "Hook Design"
+            statement: "PreToolUse hooks intercept before execution (can block). PostToolUse hooks run after (can provide feedback). Event-driven automation"
+            evaluates: "Are hooks used for automated validation, formatting, and security enforcement?"
+          - id: hook-security
+            name: "Hook Security"
+            statement: "Use hooks to block access to sensitive files (.env), enforce coding standards, run type checkers after edits"
+            evaluates: "Are security-sensitive operations protected by hooks?"
+
+      - id: useful-hooks
+        number: 17
+        title: "Useful Hooks"
+        criteria:
+          - id: type-checking-hook
+            name: "Automated Type Checking"
+            statement: "PostToolUse hook runs type checker after file edits — catches errors Claude misses when changing function signatures"
+            evaluates: "Are automated checks (type checking, linting) triggered by hooks after AI edits?"
+          - id: duplication-prevention
+            name: "Duplication Prevention"
+            statement: "Hook launches separate Claude instance to review changes for duplicated functionality in large codebases"
+            evaluates: "Is there a mechanism to catch duplicated code when AI generates new functions?"
+
+      - id: claude-code-sdk
+        number: 19
+        title: "The Claude Code SDK"
+        criteria:
+          - id: sdk-usage
+            name: "Programmatic Claude Code"
+            statement: "The SDK runs Claude Code programmatically — same functionality as terminal but integrated into pipelines, hooks, and automation"
+            evaluates: "Is Claude Code used programmatically where automation would improve workflows?"
