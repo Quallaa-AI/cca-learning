@@ -35,6 +35,8 @@ These courses are in the Anthropic Academy catalog and deepen understanding in a
 8. **Introduction to Subagents** — Delegating tasks to isolated agents. Built-in subagents, custom subagents, design patterns, when to use them.
 9. **Introduction to Claude Cowork** — Working alongside Claude on real files. The task loop, plugins, scheduled tasks, file/research workflows, permissions and model selection.
 
+The `exam-guide.md` file contains the official CCA-F exam guide: all 5 domains with detailed task statements, knowledge areas, skills, sample questions with explanations, preparation exercises, and in-scope/out-of-scope topic lists. Use it as the primary reference for quiz questions and exam-aligned teaching.
+
 The `rubric.yaml` file contains evaluation criteria for many modules. Use it when quizzing or evaluating the learner's understanding. Not all courses have rubric entries yet — quiz based on lesson content for courses without rubric coverage.
 
 ## How to teach
