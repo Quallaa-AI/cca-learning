@@ -34,16 +34,17 @@ That's it. Claude reads the course material, uses the evaluation rubric, and ada
 
 ## What's in here
 
-### Recommended CCA prep (official)
+### Core courses (5)
 
-The CCA landing page recommends these four courses:
+Anthropic has two official course lists that don't fully agree. The CPN acceptance email requires 4 courses for partner admission. The CCA exam landing page recommends a different 4 for exam prep. Three overlap. These 5 cover both:
 
-| Course | Lessons | What it covers |
-|--------|---------|---------------|
-| Building with the Claude API | 85 | API basics, prompt engineering, tool use, RAG, extended thinking, prompt caching, MCP, agent and workflow patterns |
-| Introduction to MCP | 14 | Model Context Protocol — servers, clients, tools, resources, prompts |
-| Claude Code in Action | 21 | Context management, planning mode, hooks, custom commands, GitHub integration, the SDK |
-| Claude 101 | 14 | What Claude is, core capabilities, projects, artifacts, skills, tools, research mode |
+| Course | Lessons | What it covers | Source |
+|--------|---------|---------------|--------|
+| Introduction to Agent Skills | 6 | Claude Code skills — creating, configuring, sharing, troubleshooting | CPN required |
+| Building with the Claude API | 85 | API basics, prompt engineering, tool use, RAG, extended thinking, prompt caching, MCP, agent and workflow patterns | Both |
+| Introduction to MCP | 14 | Model Context Protocol — servers, clients, tools, resources, prompts | Both |
+| Claude Code in Action | 21 | Context management, planning mode, hooks, custom commands, GitHub integration, the SDK | Both |
+| Claude 101 | 14 | What Claude is, core capabilities, projects, artifacts, skills, tools, research mode | CCA recommended |
 
 ### Supplemental courses
 
@@ -53,7 +54,6 @@ Additional Anthropic Academy courses that deepen exam-relevant topics:
 |--------|---------|---------------|
 | AI Fluency Framework Foundations | 15 | The 4D Framework (Delegation, Description, Discernment, Diligence), engagement modes, human-AI collaboration philosophy |
 | MCP Advanced Topics | 15 | Sampling, notifications, roots, JSON message types, STDIO and StreamableHTTP transports |
-| Introduction to Agent Skills | 6 | Claude Code skills — creating, configuring, sharing, and troubleshooting reusable AI behavior |
 | Introduction to Subagents | 4 | Delegating tasks to isolated agents, built-in and custom subagents, design patterns |
 | Introduction to Claude Cowork | 11 | The task loop, plugins, scheduled tasks, file/research workflows, permissions, model selection |
 
@@ -61,17 +61,17 @@ Additional Anthropic Academy courses that deepen exam-relevant topics:
 
 The CCA-F exam tests five domains. Here's how courses map to each:
 
-| Domain | Weight | Recommended courses | Supplemental |
-|--------|--------|--------------------|--------------| 
-| Agentic Architecture & Orchestration | 27% | Building with the Claude API | Introduction to Subagents |
-| Claude Code Configuration & Workflows | 20% | Claude Code in Action | Agent Skills, Claude Cowork |
+| Domain | Weight | Core courses | Supplemental |
+|--------|--------|-------------|--------------|
+| Agentic Architecture & Orchestration | 27% | Building with the Claude API, Agent Skills | Introduction to Subagents |
+| Claude Code Configuration & Workflows | 20% | Claude Code in Action, Agent Skills | Claude Cowork |
 | Prompt Engineering & Structured Output | 20% | Building with the Claude API | — |
 | Tool Design & MCP Integration | 18% | Introduction to MCP, Building with the Claude API | MCP Advanced Topics |
 | Context Management & Reliability | 15% | Building with the Claude API, Claude Code in Action | Introduction to Subagents |
 
 ## Learning paths
 
-**CCA prep:** Work through the four recommended courses. Start with Claude 101, then Building with the Claude API, Introduction to MCP, and Claude Code in Action.
+**CCA + CPN prep:** Work through the 5 core courses. Start with Claude 101, then Agent Skills, Building with the Claude API, Introduction to MCP, and Claude Code in Action.
 
 **New to Claude:** Start with Claude 101, then AI Fluency Framework Foundations.
 

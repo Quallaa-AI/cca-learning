@@ -16,22 +16,22 @@ The Claude Certified Architect — Foundations (CCA-F) exam is 60 questions, 120
 
 ## Course catalog
 
-### Recommended CCA prep (official)
+### Core courses (5)
 
-The CCA landing page recommends these four courses as exam preparation:
+There are two official course lists from Anthropic that don't fully agree. The CPN acceptance email requires 4 courses for partner admission. The CCA exam landing page recommends a different 4 for exam prep. Three overlap, two differ. Until Anthropic clarifies, these 5 courses cover both:
 
-1. **Building with the Claude API** — The big course. API basics, prompt evaluation, prompt engineering, tool use, RAG, extended thinking, prompt caching, MCP, and agent/workflow patterns (parallelization, chaining, routing). 85 lessons.
-2. **Introduction to MCP** — Protocol-level understanding of Model Context Protocol. Servers, clients, tools, resources, and prompts as three primitives.
-3. **Claude Code in Action** — Context management, planning mode, custom commands, hooks, GitHub integration, and the Claude Code SDK.
-4. **Claude 101** — What Claude is, core capabilities, projects, artifacts, skills, tools, research mode.
+1. **Introduction to Agent Skills** — Reusable AI behavior in Claude Code using skills. Creating, configuring, sharing, and troubleshooting skills. *(CPN required)*
+2. **Building with the Claude API** — The big course. API basics, prompt evaluation, prompt engineering, tool use, RAG, extended thinking, prompt caching, MCP, and agent/workflow patterns. 85 lessons. *(Both)*
+3. **Introduction to MCP** — Protocol-level understanding of Model Context Protocol. Servers, clients, tools, resources, and prompts as three primitives. *(Both)*
+4. **Claude Code in Action** — Context management, planning mode, custom commands, hooks, GitHub integration, and the Claude Code SDK. *(Both)*
+5. **Claude 101** — What Claude is, core capabilities, projects, artifacts, skills, tools, research mode. *(CCA recommended)*
 
 ### Supplemental courses
 
-These courses are in the Anthropic Academy catalog and deepen understanding in areas the exam covers, but are not listed as official CCA recommended prep:
+These courses are in the Anthropic Academy catalog and deepen understanding in areas the exam covers:
 
-5. **AI Fluency Framework Foundations** — The 4D Framework (Delegation, Description, Discernment, Diligence), engagement modes (Automation, Augmentation, Agency), human-AI collaboration philosophy.
-6. **MCP Advanced Topics** — Sampling, notifications, roots, JSON message types, STDIO and StreamableHTTP transports, stateful connections.
-7. **Introduction to Agent Skills** — Reusable AI behavior in Claude Code using skills. Creating, configuring, sharing, and troubleshooting skills.
+6. **AI Fluency Framework Foundations** — The 4D Framework (Delegation, Description, Discernment, Diligence), engagement modes (Automation, Augmentation, Agency), human-AI collaboration philosophy.
+7. **MCP Advanced Topics** — Sampling, notifications, roots, JSON message types, STDIO and StreamableHTTP transports, stateful connections.
 8. **Introduction to Subagents** — Delegating tasks to isolated agents. Built-in subagents, custom subagents, design patterns, when to use them.
 9. **Introduction to Claude Cowork** — Working alongside Claude on real files. The task loop, plugins, scheduled tasks, file/research workflows, permissions and model selection.
 
