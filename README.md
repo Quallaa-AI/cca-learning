@@ -1,8 +1,8 @@
 # CCA Learning
 
-Learn Anthropic's Claude Certified Associate (CCA) course material with AI as your tutor.
+Learn Anthropic's Claude Certified Architect (CCA) course material with AI as your tutor.
 
-This repository contains the full CCA course catalog — five courses covering AI fluency, the Claude API, MCP, Claude Code, and agent skills. Instead of passively reading through lessons, you use Claude Code to work through the material interactively. It reads the lessons, teaches you the concepts, quizzes you, and helps you apply what you learn to real work.
+This repository contains CCA course material covering AI fluency, the Claude API, MCP, Claude Code, agent skills, and subagents. Instead of passively reading through lessons, you use Claude Code to work through the material interactively. It reads the lessons, teaches you the concepts, quizzes you, and helps you apply what you learn to real work.
 
 ## Getting started
 
@@ -34,23 +34,50 @@ That's it. Claude reads the course material, uses the evaluation rubric, and ada
 
 ## What's in here
 
+### Recommended CCA prep (official)
+
+The CCA landing page recommends these four courses:
+
 | Course | Lessons | What it covers |
 |--------|---------|---------------|
-| AI Fluency Framework Foundations | 15 | The 4D Framework (Delegation, Description, Discernment, Diligence), engagement modes, human-AI collaboration philosophy |
-| Introduction to Agent Skills | 6 | Claude Code skills — creating, configuring, sharing, and troubleshooting reusable AI behavior |
 | Building with the Claude API | 85 | API basics, prompt engineering, tool use, RAG, extended thinking, prompt caching, MCP, agent and workflow patterns |
 | Introduction to MCP | 14 | Model Context Protocol — servers, clients, tools, resources, prompts |
 | Claude Code in Action | 21 | Context management, planning mode, hooks, custom commands, GitHub integration, the SDK |
+| Claude 101 | 14 | What Claude is, core capabilities, projects, artifacts, skills, tools, research mode |
 
-## Suggested learning paths
+### Supplemental courses
 
-**New to AI collaboration:** Start with AI Fluency Framework Foundations. It gives you the mental models that make everything else click.
+Additional Anthropic Academy courses that deepen exam-relevant topics:
+
+| Course | Lessons | What it covers |
+|--------|---------|---------------|
+| AI Fluency Framework Foundations | 15 | The 4D Framework (Delegation, Description, Discernment, Diligence), engagement modes, human-AI collaboration philosophy |
+| MCP Advanced Topics | 15 | Sampling, notifications, roots, JSON message types, STDIO and StreamableHTTP transports |
+| Introduction to Agent Skills | 6 | Claude Code skills — creating, configuring, sharing, and troubleshooting reusable AI behavior |
+| Introduction to Subagents | 4 | Delegating tasks to isolated agents, built-in and custom subagents, design patterns |
+| Introduction to Claude Cowork | 11 | The task loop, plugins, scheduled tasks, file/research workflows, permissions, model selection |
+
+## CCA exam domains
+
+The CCA-F exam tests five domains. Here's how courses map to each:
+
+| Domain | Weight | Recommended courses | Supplemental |
+|--------|--------|--------------------|--------------| 
+| Agentic Architecture & Orchestration | 27% | Building with the Claude API | Introduction to Subagents |
+| Claude Code Configuration & Workflows | 20% | Claude Code in Action | Agent Skills, Claude Cowork |
+| Prompt Engineering & Structured Output | 20% | Building with the Claude API | — |
+| Tool Design & MCP Integration | 18% | Introduction to MCP, Building with the Claude API | MCP Advanced Topics |
+| Context Management & Reliability | 15% | Building with the Claude API, Claude Code in Action | Introduction to Subagents |
+
+## Learning paths
+
+**CCA prep:** Work through the four recommended courses. Start with Claude 101, then Building with the Claude API, Introduction to MCP, and Claude Code in Action.
+
+**New to Claude:** Start with Claude 101, then AI Fluency Framework Foundations.
 
 **Building with the API:** Go straight to Building with the Claude API. It's self-contained and hands-on.
 
-**Using Claude Code daily:** Start with Claude Code in Action, then Introduction to Agent Skills.
-
-**Want the full picture:** Work through all five in order. The courses build on each other.
+**Using Claude Code daily:** Claude Code in Action, then Introduction to Agent Skills, then Introduction to Subagents.
 
 ## How it works
 
@@ -60,7 +87,7 @@ The `CLAUDE.md` file in this repo instructs Claude to act as a tutor — not a s
 - Help you apply concepts to your real work
 - Track what you've covered and build on it
 
-The `rubric.yaml` file contains evaluation criteria for every module across all courses. Claude uses this to assess your understanding meaningfully.
+The `rubric.yaml` file contains evaluation criteria for many modules. Claude uses this to assess your understanding meaningfully. For courses without rubric coverage, it quizzes based on lesson content directly.
 
 ## License
 
